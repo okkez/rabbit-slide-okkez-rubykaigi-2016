@@ -1,0 +1,72 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    atk (3.0.9)
+      glib2 (= 3.0.9)
+    cairo (1.15.2)
+      pkg-config (>= 1.1.5)
+    coderay (1.1.1)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    gdk_pixbuf2 (3.0.9)
+      glib2 (= 3.0.9)
+    gettext (3.2.2)
+      locale (>= 2.0.5)
+      text (>= 1.3.0)
+    gio2 (3.0.9)
+      glib2 (= 3.0.9)
+      gobject-introspection (= 3.0.9)
+    glib2 (3.0.9)
+      pkg-config
+    gobject-introspection (3.0.9)
+      glib2 (= 3.0.9)
+    gtk2 (3.0.9)
+      atk (= 3.0.9)
+      gdk_pixbuf2 (= 3.0.9)
+      pango (= 3.0.9)
+    hikidoc (0.1.0)
+    kramdown (1.12.0)
+    locale (2.1.2)
+    mini_portile2 (2.1.0)
+    multipart-post (2.0.0)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    pango (3.0.9)
+      cairo (>= 1.14.0)
+      glib2 (= 3.0.9)
+    pkg-config (1.1.7)
+    poppler (3.0.9)
+      cairo (>= 1.14.0)
+      gdk_pixbuf2 (= 3.0.9)
+    rabbit (2.1.9)
+      coderay (>= 1.0.0)
+      faraday
+      gettext (>= 3.0.1)
+      gio2
+      gtk2
+      hikidoc
+      kramdown
+      nokogiri
+      poppler
+      rdtool
+      rsvg2
+      rttool
+    rabbit-theme-rurema (1.1.2)
+      rabbit (>= 2.0.2)
+    rdtool (0.6.38)
+    rsvg2 (3.0.9)
+      cairo (>= 1.12.8)
+      gdk_pixbuf2 (= 3.0.9)
+    rttool (1.0.3.0)
+    text (1.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rabbit
+  rabbit-theme-rurema
+
+BUNDLED WITH
+   1.12.5
