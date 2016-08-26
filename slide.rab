@@ -5,32 +5,35 @@
 : author
     okkez
 : date
-    2016/09/xx
+    2016/09/09
 : allotted-time
-    25m
+    35m
 : theme
     .
 
-= 自己紹介
+= Who?
 
-* okkez (おっきーと読みます)
-* 3年振りの発表
-* 3才の娘がいます
-* クリアコードという会社で働いています
+* okkez (pronounce: okkiː)
+* Working in ClearCode, Inc.
+* I have 3 years old daughter
+* 3 years since last report
 
 == Note
 
-- okkez と書いて「おっきー」と読みます
+- okkez と書いて「おっきー」と読みます(発音記号は適当です)
+
+- クリアコードという会社で働いています
+
+- 3才の娘がいます。今回は来ていません。
 
 - RubyKaigi2013 以来3年振りに「るりま」について話します
 
-= これまでの歩み
+= History
 
-* 2006-08-27 プロジェクト開始
-* 2009-01-31 Ruby1.9.1
-* 2010-08-18 Ruby1.9.2
-* 2011-09-01 第 3 段階完了
-* 2013-02-24 Ruby2.0.0
+* (('tag:x-small:2006-08-27')) Start Project
+* (('tag:x-small:2009-01-31')) Ruby1.9.1 is released
+* (('tag:x-small:2010-08-18')) Ruby1.9.2 is released
+* (('tag:x-small:2011-09-01')) Start maintenance
 
 == Note
 
@@ -40,34 +43,72 @@
 
 - 第2段階のクラス・モジュール・メソッドのリストアップは3ヶ月
 
-- 最低限のドキュメントを書くのに5年近くかかりました
+- 最低限のドキュメントを書くのに約5年かかりました
 
 - 2011-09-01 以降はメンテナンスフェイズ
 
-= RubyKaigi2013以降
+= History
 
-* 2013-06-02 GitHub へ移行((*完了*))
-* 2013-12-25 Ruby2.1.0
-* 2014-12-25 Ruby2.2.0
-* 2015-12-25 Ruby2.3.0
-* 2016-12-25 Ruby2.4.0 ??
+* (('tag:x-small:2013-02-24')) Ruby2.0.0 is released
+* (('tag:x-small:2013-05-30')) Last report
+
+= Since RubyKaigi2013
+
+* (('tag:x-small:2013-06-02')) Move to GitHub
+* (('tag:x-small:2013-12-25')) Ruby2.1.0 is released
+* (('tag:x-small:2014-12-25')) Ruby2.2.0 is released
+* (('tag:x-small:2015-12-25')) Ruby2.3.0 is released
+
+== Note
+
+- 2013-06-02 にリポジトリを GitHub に移行しました
+
+- 独自に svn リポジトリを管理するのが辛くなったのと Pull Request や
+  issue を広く受け入れられるようにするためです
+
+- その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています
+
+= Since RubyKaigi2013
+
 * docs.ruby-lang.org
+* (('tag:x-small:2016-12-25')) Ruby2.4.0 ??
 
-= RubyKaigi2013以降
+== Note
 
-* RDoc との協力 -> ((*まだ!!*))
-  * 更新の追従 -> 職人の手作業
-  * るりまからRDocへのリンク ((*実装済み*))
-  * などなど
+- docs.ruby-lang.org のサーバーを専用のVPSに移行しました
 
-= 感謝
+- このVPSはIIJさんが提供してくれました
 
-GitHubから読み取れる記録によると延べxx人の方が貢献してくれました
+- 管理はhsbtさんがやってくれています
+
+= Since RubyKaigi2013
+
+* With RDoc
+  * Sync -> ((*by hand...*))
+  * Link from Rurema to RDoc ((*Implemented*))
+  * ect.
+
+== Note
+
+- RDoc との更新の同期はまだできていません
+
+- 更新の追従については職人の手作業で行なっています
+
+- と言いたいところだけど実際のところは、更新の同期はほとんどできていない気がします
+
+- るりまからRDocへのリンクは実装済みです。2013年のインターンで来てくれた学生さんに実装してもらいました。
+
+- などなど
+
+
+= Contributors
 
 # image
 # src = contributors.png
 
 == Note
+
+- Gitリポジトリから読み取れる記録によると延べ88人の方が貢献してくれました
 
 https://github.com/rurema/doctree/graphs/contributors
 https://github.com/rurema/bitclust/graphs/contributors
@@ -76,12 +117,23 @@ https://github.com/rurema/bitclust/graphs/contributors
 
 RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
 
-= これから
+= From now on...
 
-* Ruby2.4.0 対応
-* TODO
+* Write docs for Ruby2.4.0
+* Generate EPUB and/or PDF
+* Develop tools
 
-= 質問
+== Note
+
+- Ruby2.4.0 対応
+
+- 他のRubyのバージョンでまだ対応できていない箇所を充実させていきたい
+
+- EPUBやPDFなどのフォーマットを生成できるようにしたい
+
+- RDoc
+
+= Question
 
 日本語でお願いします!!
 
