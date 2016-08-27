@@ -33,11 +33,13 @@
 * (('tag:x-small:2006-08-27')) Start Project
 * (('tag:x-small:2009-01-31')) Ruby1.9.1 is released
 * (('tag:x-small:2010-08-18')) Ruby1.9.2 is released
-* (('tag:x-small:2011-09-01')) Start maintenance
+* (('wait'))(('tag:x-small:2011-09-01')) Start maintenance
 
 == Note
 
 - 2006-08-27 に青木さんの号令でプロジェクトが始まりました
+
+- なんと10年も前に始まったプロジェクトなんですね
 
 - 第1段階の旧リファレンスからのフォーマット変換は2ヶ月
 
@@ -45,19 +47,23 @@
 
 - 最低限のドキュメントを書くのに約5年かかりました
 
-- 2011-09-01 以降はメンテナンスフェイズ
+- 2011-09-01 以降はメンテナンスフェイズになったのでまったりとやっています
 
 = History
 
 * (('tag:x-small:2013-02-24')) Ruby2.0.0 is released
-* (('tag:x-small:2013-05-30')) Last report
+* (('wait'))(('tag:x-small:2013-05-30')) Last report
+
+== Note
+
+- TODO
 
 = Since RubyKaigi2013
 
 * (('tag:x-small:2013-06-02')) Move to GitHub
-* (('tag:x-small:2013-12-25')) Ruby2.1.0 is released
-* (('tag:x-small:2014-12-25')) Ruby2.2.0 is released
-* (('tag:x-small:2015-12-25')) Ruby2.3.0 is released
+* (('wait'))(('tag:x-small:2013-12-25')) Ruby2.1.0 is released
+* (('wait'))(('tag:x-small:2014-12-25')) Ruby2.2.0 is released
+* (('wait'))(('tag:x-small:2015-12-25')) Ruby2.3.0 is released
 
 == Note
 
@@ -71,7 +77,9 @@
 = Since RubyKaigi2013
 
 * docs.ruby-lang.org
-* (('tag:x-small:2016-12-25')) Ruby2.4.0 ??
+  * Provided by IIJ
+* Follow Ruby updates
+  * (('wait'))((*by hand...*))
 
 == Note
 
@@ -81,79 +89,100 @@
 
 - 管理はhsbtさんがやってくれています
 
+- Ruby 本体の更新に対する追従については職人の手作業で行なっています
+
+- と言いたいところですが実際のところは、更新の同期はほとんどできていない気がします
+
+- 機械的にやれる方法を考えたい
+
 = Since RubyKaigi2013
 
 * With RDoc
-  * Sync -> ((*by hand...*))
-  * Link from Rurema to RDoc ((*Implemented*))
-  * ect.
+  * Sync ((*Not yet*))
+  * Link to RDoc ((*Implemented*))
+  * etc.
 
 == Note
 
 - RDoc との更新の同期はまだできていません
 
-- 更新の追従については職人の手作業で行なっています
-
-- と言いたいところだけど実際のところは、更新の同期はほとんどできていない気がします
-
 - るりまからRDocへのリンクは実装済みです。2013年のインターンで来てくれた学生さんに実装してもらいました。
 
 - などなど
 
+= Contributors (bitclust)
 
-= Contributors
-
-# image
-# src = contributors.png
+  # image
+  # src = contributors-bitclust.png
+  # relative-height = 120
 
 == Note
 
+- GitHub 上では18人
+
+- Gitリポジトリ上では約20人の方が貢献してくれました
+
+= Contributors (doctree)
+
+  # image
+  # src = contributors-doctree.png
+  # relative-height = 100
+
+== Note
+
+- GitHub 上では59人
+
 - Gitリポジトリから読み取れる記録によると延べ88人の方が貢献してくれました
 
-https://github.com/rurema/doctree/graphs/contributors
-https://github.com/rurema/bitclust/graphs/contributors
-
-↑からアイコンを抽出して一枚の画像にする
-
-RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
+- RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
 
 = From now on...
 
 * Write docs for Ruby2.4.0
 * Generate EPUB and/or PDF
 * Develop tools
+* Automation
 
 == Note
 
-- Ruby2.4.0 対応
+- Ruby2.4.0 がリリースされたらなるべく早く対応したい
 
 - 他のRubyのバージョンでまだ対応できていない箇所を充実させていきたい
 
 - EPUBやPDFなどのフォーマットを生成できるようにしたい
 
-- RDoc
+- RDoc i18n を活用した更新への追従？
+
+= What we want to do
+
+*
+
+= How to contribute
+
+* Use!
+* Pull request
+* Report issues
 
 = Question
 
-日本語でお願いします!!
 
-# = クリアコードからお知らせ
-#  
-# : エンジニア募集中
-#   パッチ採用による通年採用
+= クリアコードからお知らせ
+ 
+: エンジニア募集中
+  パッチ採用による通年採用
 # : インターン募集中
 #   一緒にフリーソフトウェア開発
-#  
-# 詳しくはウェブで!!
-#  
-# == Note
-#  
-# - クリアコードではエンジニアを1名募集しています
-#  
-# - パッチ採用という方法で、面接やペアプロのかわりにします
-#  
-# - パッチ採用については、インターネットで検索してください。
-#  
+ 
+詳しくはウェブでもいいですか。
+ 
+== Note
+ 
+- クリアコードではエンジニアを1名募集しています
+ 
+- パッチ採用という方法で、面接やペアプロのかわりにします
+ 
+- パッチ採用については、インターネットで検索してください。
+ 
 # - 同時にインターンも募集しています。
 #  
 # - 三ヶ月を一区切りとした期間でクリアコードメンバーと一緒にフリーソフトウェアの開発を実際に体験してもらいます。
@@ -163,6 +192,6 @@ RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
 # - ちなみにインターンは学生・社会人を問わず募集しています。
 #  
 # - http://www.clear-code.com/recruitment/, http://www.clear-code.com/internship/
-#  
-# - 興味のある方は、声をかけてください。
+ 
+- 興味のある方は、声をかけてください。
 
