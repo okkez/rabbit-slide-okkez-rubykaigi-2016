@@ -1,7 +1,7 @@
 = Ruby
 
 : subtitle
-    Ruby Reference Manual 2016 Autamn
+    Reference Manual\n2016 Autamn
 : author
     okkez
 : date
@@ -28,12 +28,26 @@
 
 - RubyKaigi2013 以来3年振りに「るりま」について話します
 
+= るりま\n!=\nるびま
+
+== Note
+
+- ここだけスライドが日本語ですみません
+
+- インターネット上でたまにるりまとるびまを勘違いしている人がいるので注意喚起です
+
+- 「るりま」はRubyリファレンスマニュアルのことです
+
+- 「るびま」はRubyistMagazineのことです
+
+- ここにいるような人は大丈夫だと思いますが、間違えないようにしてください
+
 = History
 
 * (('tag:x-small:2006-08-27')) Start Project
 * (('tag:x-small:2009-01-31')) Ruby1.9.1 is released
 * (('tag:x-small:2010-08-18')) Ruby1.9.2 is released
-* (('wait'))(('tag:x-small:2011-09-01')) Start maintenance
+* (('tag:x-small:2011-09-01')) Start maintenance
 
 == Note
 
@@ -41,22 +55,36 @@
 
 - なんと10年も前に始まったプロジェクトなんですね
 
-- 第1段階の旧リファレンスからのフォーマット変換は2ヶ月
+- ちなみに2006-08-25にRuby1.8.5がリリースされていました
+  あと2006-12-22あたりにRubyのリポジトリがSVNに移行していました
 
-- 第2段階のクラス・モジュール・メソッドのリストアップは3ヶ月
+- (第1段階の旧リファレンスからのフォーマット変換は2ヶ月)
+
+- (第2段階のクラス・モジュール・メソッドのリストアップは3ヶ月)
 
 - 最低限のドキュメントを書くのに約5年かかりました
 
 - 2011-09-01 以降はメンテナンスフェイズになったのでまったりとやっています
 
+- 2011-08-01 にRuby1.9.3preview1がリリースされていました
+
 = History
 
+* (('tag:x-small:2011-10-31')) Ruby1.9.3 is released
 * (('tag:x-small:2013-02-24')) Ruby2.0.0 is released
 * (('wait'))(('tag:x-small:2013-05-30')) Last report
 
 == Note
 
-- TODO
+- bitclust, doctree
+  UTF-8移行
+  コード整理
+  サブコマンド追加
+  ライブラリをカテゴライズ
+  プログレスバー
+  $ git log --oneline --since 2011-09-01 --until 2013-05-30 --reverse | wc -l
+  836
+  平均すると1.3commit/dayくらい
 
 = Since RubyKaigi2013
 
@@ -73,6 +101,19 @@
   issue を広く受け入れられるようにするためです
 
 - その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています
+
+  $ git log --oneline --since 2013-05-31 --reverse | wc -l
+  909
+
+- 平均すると0.8commit/dayくらい
+
+- bitclust, doctree
+  高速化
+  RDoc へのリンク
+  EPUB作りかけ
+  リストの入れ子サポート
+  その時々でサポートしているRubyバージョンの整理
+  デフォルトで生成するドキュメントのRubyのバージョンを整理
 
 = Since RubyKaigi2013
 
@@ -91,7 +132,7 @@
 
 - Ruby 本体の更新に対する追従については職人の手作業で行なっています
 
-- と言いたいところですが実際のところは、更新の同期はほとんどできていない気がします
+- と言いたいところですが実際のところは、気付ければやるという感じなので更新の同期はほとんどできていない気がします
 
 - 機械的にやれる方法を考えたい
 
@@ -134,6 +175,10 @@
 
 - Gitリポジトリから読み取れる記録によると延べ88人の方が貢献してくれました
 
+- 実際には bugs.ruby-lang.org に issue やパッチを報告してくれた人や
+  github に移行してから issue を報告してくれた人もいるのでもう少し多い
+  はずです
+
 - RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
 
 = From now on...
@@ -141,7 +186,7 @@
 * Write docs for Ruby2.4.0
 * Generate EPUB and/or PDF
 * Develop tools
-* Automation
+* SEO?
 
 == Note
 
@@ -151,20 +196,40 @@
 
 - EPUBやPDFなどのフォーマットを生成できるようにしたい
 
+- SEO? Google で他のサイトに負けないようにしたい
+
+= From now on...
+
+* Automation
+  * Notify updates
+  * Release new package
+* Stop using CHM
+
+== Note
+
 - RDoc i18n を活用した更新への追従？
 
-= What we want to do
+- CHM を作るための実行ファイルがもう手に入らないのでやめたい
 
-*
+- かわりに PDF や EPUB を検討したい
 
 = How to contribute
 
 * Use!
-* Pull request
 * Report issues
+* Pull request
 
-= Question
+== Note
 
+- 使ってください
+
+- 気付いたことがあったら issue 立ててください
+
+- twitter とかブログとかで愚痴ってもほとんど気付けません
+
+- 直せそうだったら Pull request をしてみてください
+
+= Q?
 
 = クリアコードからお知らせ
  
