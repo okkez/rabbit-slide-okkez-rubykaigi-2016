@@ -1,13 +1,13 @@
 = Ruby
 
 : subtitle
-    Reference Manual\n2016 Autamn
+    Reference Manual\n2016\nAutamn
 : author
     okkez
 : date
     2016/09/09
 : allotted-time
-    35m
+    30m
 : theme
     .
 
@@ -55,6 +55,8 @@
 
 - なんと10年も前に始まったプロジェクトなんですね
 
+- 当初は「Rubyリファレンスマニュアル刷新計画」という名前でした
+
 - ちなみに2006-08-25にRuby1.8.5がリリースされていました
   あと2006-12-22あたりにRubyのリポジトリがSVNに移行していました
 
@@ -99,6 +101,8 @@
 
 - 独自に svn リポジトリを管理するのが辛くなったのと Pull Request や
   issue を広く受け入れられるようにするためです
+
+- 体感では、プロジェクト外部の人からのパッチが増えたような気がしています
 
 - その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています
 
@@ -147,11 +151,20 @@
 
 - RDoc との更新の同期はまだできていません
 
-- るりまからRDocへのリンクは実装済みです。2013年のインターンで来てくれた学生さんに実装してもらいました。
+- るりまからRDocへのリンクは実装済みです。2013年のインターンでクリアコードに来てくれた学生さんに実装してもらいました。
 
 - などなど
 
-= Contributors (bitclust)
+= Recent updates
+
+* Add canonical
+* Add NEWS
+
+== Note
+
+- ここ数ヶ月以内だと canonical を追加したり Ruby の NEWS を一部読めるようにしました
+
+= Contributors (('tag:small:rurema/bitclust'))
 
   # image
   # src = contributors-bitclust.png
@@ -159,11 +172,16 @@
 
 == Note
 
-- GitHub 上では18人
+- BitClust はるりまを生成するためのツール/ライブラリです
+
+- GitHub 上では18人 (contributorsから取得できた人数)
 
 - Gitリポジトリ上では約20人の方が貢献してくれました
 
-= Contributors (doctree)
+  $ git log --oneline --format=%aN | sort -u | wc -l
+  22
+
+= Contributors (('tag:small:rurema/doctree'))
 
   # image
   # src = contributors-doctree.png
@@ -171,78 +189,146 @@
 
 == Note
 
-- GitHub 上では59人
+- GitHub 上では59人 (contributorsから取得できた人数)
 
-- Gitリポジトリから読み取れる記録によると延べ88人の方が貢献してくれました
+- Gitリポジトリから読み取れる記録によると延べ82人の方が貢献してくれました
+
+  $ git log --oneline --format=%aN | sort -u | wc -l
+  83
 
 - 実際には bugs.ruby-lang.org に issue やパッチを報告してくれた人や
   github に移行してから issue を報告してくれた人もいるのでもう少し多い
-  はずです
-
-- RubyKaigi2016 の参加者がxxx人くらいらしいので。。。
+  はずです。
 
 = From now on...
 
 * Write docs for Ruby2.4.0
-* Generate EPUB and/or PDF
 * Develop tools
-* SEO?
+* Automation
+* With RDoc
+
+== Note
+
+- 他のRubyのバージョンでまだ対応できていない箇所を充実させていきたい
+
+- 最近、twitter でるりまについて検索したら SEO で変なサイトに負けてて辛いという話を見かけた
+
+- 自分はGoogleで検索せずにるりまを直接開くのでSEOの観点はなかった
+
+- SEO? Google で他の変なサイトに負けないようにしたい
+
+= Write docs for Ruby2.4.0
+
+* 2016-12-25 release?
+* (('tag:small:Unify Fixnum and Bignum to Integer'))
+* Increase bundled gem
+* Not too many
 
 == Note
 
 - Ruby2.4.0 がリリースされたらなるべく早く対応したい
 
-- 他のRubyのバージョンでまだ対応できていない箇所を充実させていきたい
+- 今のところわかっている変更点を見る限りそんなに多くないので問題なく対応できそう
 
-- EPUBやPDFなどのフォーマットを生成できるようにしたい
+= Develop tools
 
-- SEO? Google で他のサイトに負けないようにしたい
-
-= From now on...
-
-* Automation
-  * Notify updates
-  * Release new package
 * Stop using CHM
+* Generate EPUB?
+* Generate PDF?
 
 == Note
-
-- RDoc i18n を活用した更新への追従？
 
 - CHM を作るための実行ファイルがもう手に入らないのでやめたい
 
-- かわりに PDF や EPUB を検討したい
+- ここ数年新しいの出していないけど、誰も文句を言わないので欲しい人は自分で作っていそう
 
-= How to contribute
+- るりまサーチが便利なので、そっちで満足しているのかもしれない
 
-* Use!
-* Report issues
-* Pull request
+- CHM のかわりに PDF や EPUB を生成したい
+
+- EPUB は作りかけ。どこかで時間を見つけて完成させたい。
+
+- PDF は EPUB からの変換でやれると楽でよさそう。
+
+= Automation
+
+* Notify updates
+* Release new package
 
 == Note
 
-- 使ってください
+- Ruby の本体や RDoc が更新されたらるりまの更新要否を検出して通知
+
+- 新しいパッケージのリリース(CHMやめたい)
+
+= With RDoc
+
+* Sync
+  * English <-> Japanese
+* Use i18n module
+  * Detect updates
+
+== Note
+
+- 英語のドキュメントの良い内容を日本語側に取り込んだり、
+
+- 日本語のドキュメントの良い内容を英語のドキュメントに取り込んでもらったりして
+
+- 双方向に良くしていけるのが理想。
+
+- RDoc i18n を活用した更新への追従について調べたい
+
+- そもそも RDoc i18n についてわかってないのでできるかどうか不明。。。
+
+= How to contribute\n(('tag:x-small:rurema/doctree'))
+
+* Use! (('note:http://docs.ruby-lang.org/ja/'))
+* Report issues
+* Write Japanese documents
+  * Fix a typo
+
+== Note
+
+- るりまを使ってください docs.ruby-lang.org/ja/
 
 - 気付いたことがあったら issue 立ててください
 
 - twitter とかブログとかで愚痴ってもほとんど気付けません
 
-- 直せそうだったら Pull request をしてみてください
+- もし、直せそうだったら Pull request をしてみてください
 
-= Q?
+- タイポの修正からでも大丈夫
 
-= クリアコードからお知らせ
- 
+- RDベースの独自文法だけど、小さな修正なら文法のことを知らなくても簡単にできます
+
+- ビルドの確認もしなくて大丈夫。CIしているので、何かあれば誰かが気付きます
+
+= How to contribute\n(('tag:x-small:rurema/bitclust'))
+
+* Develop BitClust
+  * Generate EPUB
+  * Generate PDF
+  * Notify updates
+
+== Note
+
+- EPUB, PDF 生成。誰かが実装してくれたら嬉しいけど、テストしてくれるだけでも助かる。
+
+- Ruby本体の更新を検知してドキュメントの修正が必要なことを楽に知りたい
+
+= Question?
+
+= Info from ClearCode, Inc
+
+: OSS開発支援やってます
+  OSS開発での困り事、相談乗ります
 : エンジニア募集中
-  パッチ採用による通年採用
-# : インターン募集中
-#   一緒にフリーソフトウェア開発
- 
-詳しくはウェブでもいいですか。
+  パッチ採用による通年採用\n
+  (('note:TODO translate English'))
  
 == Note
  
-- クリアコードではエンジニアを1名募集しています
+- クリアコードではエンジニアをN名募集しています
  
 - パッチ採用という方法で、面接やペアプロのかわりにします
  
