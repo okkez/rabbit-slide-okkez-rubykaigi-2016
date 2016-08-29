@@ -57,6 +57,7 @@ GEM
       rttool
     rabbit-theme-rurema (1.1.2)
       rabbit (>= 2.0.2)
+    rake (11.2.2)
     rdtool (0.6.38)
     rsvg2 (3.0.9)
       cairo (>= 1.12.8)
@@ -74,6 +75,7 @@ DEPENDENCIES
   octokit
   rabbit
   rabbit-theme-rurema
+  rake
 
 BUNDLED WITH
    1.12.5
