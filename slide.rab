@@ -13,12 +13,6 @@
 : theme
     .
 
-= Silver sponsor
-
-  # image
-  # src = silver-sponsor.png
-  # relative-height = 100
-
 = Who?
 
 * okkez (pronounce: okkiː)
@@ -28,27 +22,63 @@
 
 == Note
 
+- まず簡単に自己紹介させてください
+
 - okkez と書いて「おっきー」と読みます(発音記号は適当です)
 
 - クリアコードという会社で働いています
 
-- 3才の娘がいます。今回は来ていません。
+- 3才の娘がいますが、今回は来ていません。
 
 - RubyKaigi2013 以来3年振りに「るりま」について話します
 
-= るりま\n!=\nるびま
+= Silver sponsor
+
+  # image
+  # src = silver-sponsor.png
+  # relative-height = 100
 
 == Note
 
-- ここだけスライドが日本語ですみません
+- クリアコードは Silver sponsor をやってます
 
-- インターネット上でたまにるりまとるびまを勘違いしている人がいるので注意喚起です
+- 今回の旅費やホテル代も出してもらいました
+
+= る((*り*))ま\n!=\nる((*び*))ま
+
+== Note
+
+- ここから4枚だけスライドが日本語です。すみません。
+
+- 最初に一番大事なことを伝えておきます
+
+- インターネット上でたまにるりまとるびまを勘違いしている人がいるので注意喚起します
+
+= るりま
+
+* ((*Ru*))by ((*Re*))ference ((*Ma*))nual
+* ((*る*))びー((*り*))ふぁれんす((*ま*))にゅある
+
+== Note
 
 - 「るりま」はRubyリファレンスマニュアルのことです
 
+= るびま
+
+* ((*Ruby*))ist ((*Ma*))gazine
+* ((*るび*))ーすと((*ま*))がじん
+
+== Note
+
 - 「るびま」はRubyistMagazineのことです
 
-- ここにいるような人は大丈夫だと思いますが、間違えないようにしてください
+= る((*り*))ま\n!=\nる((*び*))ま
+
+== Note
+
+- ここにいるような人は大丈夫だと思いますので、もし身近に間違えている人がいたらそっと訂正してあげてください
+
+- るりまとるびまはどちらも日本Rubyの会のサポートを受けて活動しています
 
 = History
 
@@ -63,10 +93,11 @@
 
 - なんと10年も前に始まったプロジェクトなんですね
 
-- 当初は「Rubyリファレンスマニュアル刷新計画」という名前でした
+- 当初は「Rubyリファレンスマニュアル刷新計画」というかっこいい名前でした
 
-- ちなみに2006-08-25にRuby1.8.5がリリースされていました
-  あと2006-12-22あたりにRubyのリポジトリがSVNに移行していました
+- 今は「るりまプロジェクト」という短い名前になっています
+
+- ちなみに2006-08-25にRuby1.8.5がリリースされていました。あと2006-12-22あたりにRubyのリポジトリがSVNに移行していました
 
 - (第1段階の旧リファレンスからのフォーマット変換は2ヶ月)
 
@@ -86,15 +117,21 @@
 
 == Note
 
-- bitclust, doctree
-  UTF-8移行
-  コード整理
-  サブコマンド追加
-  ライブラリをカテゴライズ
-  プログレスバー
-  $ git log --oneline --since 2011-09-01 --until 2013-05-30 --reverse | wc -l
-  836
-  平均すると1.3commit/dayくらい
+- 2011-10-31にRuby1.9.3がリリースされました
+
+- 2013-02-24にRuby2.0.0がリリースされました <Enter>
+
+- 2013-05-30にRubyKaigi2013で発表しました
+
+- (bitclust, doctree)
+
+- UTF-8移行, コード整理, サブコマンド追加, ライブラリをカテゴライズ, プログレスバー
+
+- $ git log --oneline --since 2011-09-01 --until 2013-05-30 --reverse | wc -l
+
+- 836
+
+- 平均すると1.3commit/dayくらい
 
 = Since RubyKaigi2013
 
@@ -105,27 +142,29 @@
 
 == Note
 
+- RubyKaigi2013以降にあった出来事をふりかえります
+
 - 2013-06-02 にリポジトリを GitHub に移行しました
 
-- 独自に svn リポジトリを管理するのが辛くなったのと Pull Request や
-  issue を広く受け入れられるようにするためです
+- 独自に svn リポジトリを管理するのが辛くなったのと Pull Request や issue を広く受け入れられるようにするためです
 
 - 体感では、プロジェクト外部の人からのパッチが増えたような気がしています
 
-- その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています
+- 確実にマージ作業はやりやすくなっています <Enter>
 
-  $ git log --oneline --since 2013-05-31 --reverse | wc -l
-  909
+- その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています <Enter> 5sec <Enter>
+
+- $ git log --oneline --since 2013-05-31 --reverse | wc -l
+
+- 909
 
 - 平均すると0.8commit/dayくらい
 
 - bitclust, doctree
-  高速化
-  RDoc へのリンク
-  EPUB作りかけ
-  リストの入れ子サポート
-  その時々でサポートしているRubyバージョンの整理
-  デフォルトで生成するドキュメントのRubyのバージョンを整理
+
+-  高速化, RDoc へのリンク, EPUB作りかけ, リストの入れ子サポート, その時々でサポートしているRubyバージョンの整理
+
+-  デフォルトで生成するドキュメントのRubyのバージョンを整理
 
 = Since RubyKaigi2013
 
@@ -138,22 +177,23 @@
 
 - docs.ruby-lang.org のサーバーを専用のVPSに移行しました
 
+- 以前は別のサーバーと同居していて、リソース的に辛いところがありましたが楽になりました
+
 - このVPSはIIJさんが提供してくれました
 
 - 管理はhsbtさんがやってくれています
 
-- Ruby 本体の更新に対する追従については職人の手作業で行なっています
+- Ruby 本体の更新に対するるりまの追従については職人の手作業で行なっています
 
-- と言いたいところですが実際のところは、気付ければやるという感じなので更新の同期はほとんどできていない気がします
+- と言いたいところですが実際のところは、気付くことができればやるという感じなので更新の同期はほとんどできていない気がします
 
 - 機械的にやれる方法を考えたい
 
 = Since RubyKaigi2013
 
-* With RDoc
+* Related to RDoc
   * Sync ((*Not yet*))
   * Link to RDoc ((*Implemented*))
-  * etc.
 
 == Note
 
@@ -161,16 +201,23 @@
 
 - るりまからRDocへのリンクは実装済みです。2013年のインターンでクリアコードに来てくれた学生さんに実装してもらいました。
 
-- などなど
-
 = Recent updates
 
 * Add canonical
 * Add NEWS
+* Fix (('tag:small:open_search_description.xml'))
 
 == Note
 
+- 最近の更新を紹介します
+
 - ここ数ヶ月以内だと canonical を追加したり Ruby の NEWS を一部読めるようにしました
+
+- open_search_description.xml の中身が壊れていたのを修正しました
+
+- この件はGithubのissueに報告があって初めて気付いたので、直すことができました
+
+- 関係者にきちんと届くところで声を上げることが大事です
 
 = Contributors (('tag:small:rurema/bitclust'))
 
@@ -179,6 +226,8 @@
   # relative-height = 120
 
 == Note
+
+- BitClust のリポジトリからわかる貢献してくれた人の一覧です
 
 - BitClust はるりまを生成するためのツール/ライブラリです
 
@@ -197,6 +246,8 @@
 
 == Note
 
+- るりまのリポジトリからわかる貢献してくれた人の一覧です
+
 - GitHub 上では59人 (contributorsから取得できた人数)
 
 - Gitリポジトリから読み取れる記録によると延べ82人の方が貢献してくれました
@@ -204,26 +255,31 @@
   $ git log --oneline --format=%aN | sort -u | wc -l
   83
 
-- 実際には bugs.ruby-lang.org に issue やパッチを報告してくれた人や
-  github に移行してから issue を報告してくれた人もいるのでもう少し多い
-  はずです。
+- 実際には bugs.ruby-lang.org に issue やパッチを報告してくれた人やgithub に移行してから issue を報告してくれた人もいるのでもう少し多いはずです。
+
+- bitclustと合わせると延べ100人以上の人が協力してくれています。
 
 = From now on...
 
 * Write docs for Ruby2.4.0
 * Develop tools
 * Automation
-* With RDoc
+* Related to RDoc
 
 == Note
 
-- 他のRubyのバージョンでまだ対応できていない箇所を充実させていきたい
+- これからやりたいことについて話します
 
-- 最近、twitter でるりまについて検索したら SEO で変なサイトに負けてて辛いという話を見かけた
+- これからやりたいことは、大きく分けて4つあります
 
-- 自分はGoogleで検索せずにるりまを直接開くのでSEOの観点はなかった
+- 順番に見ていきます
 
-- SEO? Google で他の変なサイトに負けないようにしたい
+= From now on...
+
+* ((*Write docs for Ruby2.4.0*))
+* Develop tools
+* Automation
+* Related to RDoc
 
 = Write docs for Ruby2.4.0
 
@@ -234,9 +290,18 @@
 
 == Note
 
+- 2016-12-25 リリース予定らしいので
+
 - Ruby2.4.0 がリリースされたらなるべく早く対応したい
 
 - 今のところわかっている変更点を見る限りそんなに多くないので問題なく対応できそう
+
+= From now on...
+
+* Write docs for Ruby2.4.0
+* ((*Develop tools*))
+* Automation
+* Related to RDoc
 
 = Develop tools
 
@@ -246,17 +311,20 @@
 
 == Note
 
-- CHM を作るための実行ファイルがもう手に入らないのでやめたい
-
-- ここ数年新しいの出していないけど、誰も文句を言わないので欲しい人は自分で作っていそう
-
-- るりまサーチが便利なので、そっちで満足しているのかもしれない
+- CHM を作るための実行ファイルが正規ルートではもう手に入らないのでやめたい
 
 - CHM のかわりに PDF や EPUB を生成したい
 
-- EPUB は作りかけ。どこかで時間を見つけて完成させたい。
+- EPUB は作りかけ。時間を作って完成させたい。
 
 - PDF は EPUB からの変換でやれると楽でよさそう。
+
+= From now on...
+
+* Write docs for Ruby2.4.0
+* Develop tools
+* ((*Automation*))
+* Related to RDoc
 
 = Automation
 
@@ -265,11 +333,22 @@
 
 == Note
 
+- 自動化については、
+
 - Ruby の本体や RDoc が更新されたらるりまの更新要否を検出して通知
 
-- 新しいパッケージのリリース(CHMやめたい)
+- 新しいパッケージのリリースを自動化したい
 
-= With RDoc
+- (CHMやめたい)
+
+= From now on...
+
+* Write docs for Ruby2.4.0
+* Develop tools
+* Automation
+* ((*Related to RDoc*))
+
+= Related to RDoc
 
 * Sync
   * English <-> Japanese
@@ -278,21 +357,25 @@
 
 == Note
 
+- RDoc 関連のやりたいこともあります。
+
 - 英語のドキュメントの良い内容を日本語側に取り込んだり、
 
 - 日本語のドキュメントの良い内容を英語のドキュメントに取り込んでもらったりして
 
-- 双方向に良くしていけるのが理想。
+- 双方向に良くしていけるのが理想です。
 
-- RDoc i18n を活用した更新への追従について調べたい
+- RDoc i18n を活用した更新への追従について調べたいですが、
 
-- そもそも RDoc i18n についてわかってないのでできるかどうか不明。。。
+- そもそも RDoc i18n についてわかってないので RDoc i18n を活用することで
+  Ruby本体の更新への追従ができるかどうか不明。。。
 
-= How to contribute\n(('tag:x-small:rurema/doctree'))
+= Contribute! (('tag:x-small:rurema/doctree'))
 
 * Use! (('note:http://docs.ruby-lang.org/ja/'))
 * Report issues
-* Write Japanese documents
+* Create Pull requests
+  * Write Japanese documents
   * Fix a typo
 
 == Note
@@ -303,26 +386,55 @@
 
 - twitter とかブログとかで愚痴ってもほとんど気付けません
 
+- 関係者に確実に届くところで声を上げるのが大事です
+
 - もし、直せそうだったら Pull request をしてみてください
 
-- タイポの修正からでも大丈夫
+- タイポの修正だけでも大丈夫
 
-- RDベースの独自文法だけど、小さな修正なら文法のことを知らなくても簡単にできます
+- RDベースの独自記法ですが、小さな修正なら文法のことを知らなくても簡単にできます
 
-- ビルドの確認もしなくて大丈夫。CIしているので、何かあれば誰かが気付きます
+- 記法がわからなければ、「こういう風に直すといいのでは？」というのを issue に書くと誰かが反応します
 
-= How to contribute\n(('tag:x-small:rurema/bitclust'))
+- CIしているので、ビルドの確認もしなくて大丈夫です。
+
+= Contribute! (('tag:x-small:rurema/bitclust'))
 
 * Develop BitClust
   * Generate EPUB
   * Generate PDF
   * Notify updates
+  * SEO (('note:Search Engine Optimization'))?
 
 == Note
 
 - EPUB, PDF 生成。誰かが実装してくれたら嬉しいけど、テストしてくれるだけでも助かる。
 
 - Ruby本体の更新を検知してドキュメントの修正が必要なことを楽に知りたい
+
+- 最近、twitter でるりまについて検索したら SEO で古いドキュメントを公開しているサイトに負けてて辛いという話を偶然見かけました
+
+- SEO については、最近 canonical を足したくらいでほとんど何もしていません
+
+- SEO については知識が無いので、自分が手を付けるとしたら一番最後になりそうです
+
+- 誰か手伝ってくれると、助かります
+
+# = English documentation
+#  
+# * http://documenting-ruby.org/
+#   * @drbian, @zzak, @practicingruby, @steveklabnik
+#   * about 75% documented
+#  
+# == Note
+#  
+# - http://documenting-ruby.org/ で活動している
+#  
+# - 4人中心となっている人がいて少なくともそのうち2人はRubyのコミッター
+#  
+# - 英語のRuby本体と完全に同期して進められている
+#  
+# - サイトによると約75%のドキュメントが書けているらしいです
 
 = Question?
 
@@ -331,8 +443,7 @@
 : OSS開発支援やってます
   OSS開発での困り事、相談乗ります
 : エンジニア募集中
-  パッチ採用による通年採用\n
-  (('note:TODO translate English'))
+  パッチ採用による通年採用
  
 == Note
  
