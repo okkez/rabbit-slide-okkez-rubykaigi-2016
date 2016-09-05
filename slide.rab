@@ -28,7 +28,7 @@
 
 - クリアコードという会社で働いています
 
-- 3才の娘がいますが、今回は来ていません。
+- 3才の娘がいますが、今回は来ていません
 
 - RubyKaigi2013 以来3年振りに「るりま」について話します
 
@@ -52,9 +52,9 @@
 
 - 最初に一番大事なことを伝えておきます
 
-- インターネット上でたまにるりまとるびまを勘違いしている人がいるので注意喚起します
+- たまにるりまとるびまを勘違いしている人がいるので注意喚起します
 
-= るりま
+= る((*り*))ま
 
 * ((*Ru*))by ((*Re*))ference ((*Ma*))nual
 * ((*る*))びー((*り*))ふぁれんす((*ま*))にゅある
@@ -63,7 +63,7 @@
 
 - 「るりま」はRubyリファレンスマニュアルのことです
 
-= るびま
+= る((*び*))ま
 
 * ((*Ruby*))ist ((*Ma*))gazine
 * ((*るび*))ーすと((*ま*))がじん
@@ -76,9 +76,9 @@
 
 == Note
 
-- ここにいるような人は大丈夫だと思いますので、もし身近に間違えている人がいたらそっと訂正してあげてください
+- ここにいるような人は大丈夫だと思いますが、もし身近に間違えている人がいたらそっと訂正してあげてください
 
-- るりまとるびまはどちらも日本Rubyの会のサポートを受けて活動しています
+- 「るりま」と「るびま」はどちらも日本Rubyの会のサポートを受けて活動しています
 
 = History
 
@@ -89,13 +89,13 @@
 
 == Note
 
+- では、歴史を簡単にふりかえります
+
 - 2006-08-27 に青木さんの号令でプロジェクトが始まりました
 
 - なんと10年も前に始まったプロジェクトなんですね
 
-- 当初は「Rubyリファレンスマニュアル刷新計画」というかっこいい名前でした
-
-- 今は「るりまプロジェクト」という短い名前になっています
+- 当初は「Rubyリファレンスマニュアル刷新計画」というかっこいい名前でした。今は「るりまプロジェクト」という短い名前になっています
 
 - ちなみに2006-08-25にRuby1.8.5がリリースされていました。あと2006-12-22あたりにRubyのリポジトリがSVNに移行していました
 
@@ -123,15 +123,13 @@
 
 - 2013-05-30にRubyKaigi2013で発表しました
 
-- (bitclust, doctree)
+- (bitclust, doctree) UTF-8移行, コード整理, サブコマンド追加, ライブラリをカテゴライズ, プログレスバー
 
-- UTF-8移行, コード整理, サブコマンド追加, ライブラリをカテゴライズ, プログレスバー
+- ($ git log --oneline --since 2011-09-01 --until 2013-05-30 --reverse | wc -l)
 
-- $ git log --oneline --since 2011-09-01 --until 2013-05-30 --reverse | wc -l
+- (836)
 
-- 836
-
-- 平均すると1.3commit/dayくらい
+- (平均すると1.3commit/dayくらい)
 
 = Since RubyKaigi2013
 
@@ -154,17 +152,17 @@
 
 - その後Rubyの新しいバージョンがリリースされるごとに有志で対応作業を続けています <Enter> 5sec <Enter>
 
-- $ git log --oneline --since 2013-05-31 --reverse | wc -l
+- ($ git log --oneline --since 2013-05-31 --reverse | wc -l)
 
-- 909
+- (909)
 
-- 平均すると0.8commit/dayくらい
+- (平均すると0.8commit/dayくらい)
 
 - bitclust, doctree
 
--  高速化, RDoc へのリンク, EPUB作りかけ, リストの入れ子サポート, その時々でサポートしているRubyバージョンの整理
+- 高速化, RDoc へのリンク, EPUB作りかけ, リストの入れ子サポート, その時々でサポートしているRubyバージョンの整理
 
--  デフォルトで生成するドキュメントのRubyのバージョンを整理
+- デフォルトで生成するドキュメントのRubyのバージョンを整理
 
 = Since RubyKaigi2013
 
@@ -187,7 +185,7 @@
 
 - と言いたいところですが実際のところは、気付くことができればやるという感じなので更新の同期はほとんどできていない気がします
 
-- 機械的にやれる方法を考えたい
+- がんばらなくてもやれる方法を考えたい
 
 = Since RubyKaigi2013
 
@@ -229,7 +227,7 @@
 
 - BitClust のリポジトリからわかる貢献してくれた人の一覧です
 
-- BitClust はるりまを生成するためのツール/ライブラリです
+- BitClust はるりまのためのツール/ライブラリです
 
 - GitHub 上では18人 (contributorsから取得できた人数)
 
@@ -281,20 +279,28 @@
 * Automation
 * Related to RDoc
 
+== Note
+
+- Ruby2.4.0対応についてです
+
 = Write docs for Ruby2.4.0
 
 * 2016-12-25 release?
 * (('tag:small:Unify Fixnum and Bignum to Integer'))
 * Increase bundled gem
-* Not too many
+* Not so many
 
 == Note
 
-- 2016-12-25 リリース予定らしいので
+- こないだのLLイベントの発表資料によると Ruby2.4.0 は 2016-12-25 リリース予定らしいです
 
 - Ruby2.4.0 がリリースされたらなるべく早く対応したい
 
 - 今のところわかっている変更点を見る限りそんなに多くないので問題なく対応できそう
+
+- bundled gem が増えるので書かなくてもいいドキュメントが増える予定です
+
+- 特に tk が外れたのは大きいと思います
 
 = From now on...
 
@@ -303,11 +309,15 @@
 * Automation
 * Related to RDoc
 
+== Note
+
+- ツールの開発について話します
+
 = Develop tools
 
 * Stop using CHM
-* Generate EPUB?
-* Generate PDF?
+* Generate EPUB, PDF?
+* etc.
 
 == Note
 
@@ -330,6 +340,8 @@
 
 * Notify updates
 * Release new package
+* Improve CI mechanism
+* etc.
 
 == Note
 
@@ -339,6 +351,8 @@
 
 - 新しいパッケージのリリースを自動化したい
 
+* CIの仕組みをもっとよくしたい
+
 - (CHMやめたい)
 
 = From now on...
@@ -347,6 +361,10 @@
 * Develop tools
 * Automation
 * ((*Related to RDoc*))
+
+== Note
+
+- RDoc 関係について話します
 
 = Related to RDoc
 
@@ -367,8 +385,7 @@
 
 - RDoc i18n を活用した更新への追従について調べたいですが、
 
-- そもそも RDoc i18n についてわかってないので RDoc i18n を活用することで
-  Ruby本体の更新への追従ができるかどうか不明。。。
+- そもそも RDoc i18n についてわかってないので RDoc i18n を活用することでRuby本体の更新への追従ができるかどうか不明。。。
 
 = Contribute! (('tag:x-small:rurema/doctree'))
 
@@ -380,7 +397,29 @@
 
 == Note
 
+- どのようにして貢献すればよいのか説明します
+
+= Contribute! (('tag:x-small:rurema/doctree'))
+
+* ((*Use!*)) (('note:http://docs.ruby-lang.org/ja/'))
+* Report issues
+* Create Pull requests
+  * Write Japanese documents
+  * Fix a typo
+
+== Note
+
 - るりまを使ってください docs.ruby-lang.org/ja/
+
+= Contribute! (('tag:x-small:rurema/doctree'))
+
+* Use! (('note:http://docs.ruby-lang.org/ja/'))
+* ((*Report issues*))
+* Create Pull requests
+  * Write Japanese documents
+  * Fix a typo
+
+== Note
 
 - 気付いたことがあったら issue 立ててください
 
@@ -388,9 +427,19 @@
 
 - 関係者に確実に届くところで声を上げるのが大事です
 
+= Contribute! (('tag:x-small:rurema/doctree'))
+
+* Use! (('note:http://docs.ruby-lang.org/ja/'))
+* Report issues
+* ((*Create Pull requests*))
+  * Write Japanese documents
+  * Fix a typo
+
+== Note
+
 - もし、直せそうだったら Pull request をしてみてください
 
-- タイポの修正だけでも大丈夫
+- タイポの修正だけでも大丈夫!
 
 - RDベースの独自記法ですが、小さな修正なら文法のことを知らなくても簡単にできます
 
@@ -401,24 +450,69 @@
 = Contribute! (('tag:x-small:rurema/bitclust'))
 
 * Develop BitClust
-  * Generate EPUB
-  * Generate PDF
+  * Generate EPUB, PDF
   * Notify updates
   * SEO (('note:Search Engine Optimization'))?
 
 == Note
 
-- EPUB, PDF 生成。誰かが実装してくれたら嬉しいけど、テストしてくれるだけでも助かる。
+- BitClust の開発で助けが必要なことを話します
+
+= Contribute! (('tag:x-small:rurema/bitclust'))
+
+* Develop BitClust
+  * ((*Generate EPUB, PDF*))
+  * Notify updates
+  * SEO (('note:Search Engine Optimization'))?
+
+== Note
+
+- EPUB, PDF 生成。
+
+- 誰かが実装してくれたら嬉しいけど、テストしてくれるだけでも助かる。
+
+- まだ実装はほとんどないけど。。。
+
+= Contribute! (('tag:x-small:rurema/bitclust'))
+
+* Develop BitClust
+  * Generate EPUB, PDF
+  * ((*Notify updates*))
+  * SEO (('note:Search Engine Optimization'))?
+
+== Note
 
 - Ruby本体の更新を検知してドキュメントの修正が必要なことを楽に知りたい
 
+= Contribute! (('tag:x-small:rurema/bitclust'))
+
+* Develop BitClust
+  * Generate EPUB, PDF
+  * Notify updates
+  * ((*SEO*)) (('note:Search Engine Optimization'))?
+
+== Note
+
 - 最近、twitter でるりまについて検索したら SEO で古いドキュメントを公開しているサイトに負けてて辛いという話を偶然見かけました
+
+- 実際に適当なキーワードで検索すると、古いドキュメントを公開しているサイトがヒットしました
 
 - SEO については、最近 canonical を足したくらいでほとんど何もしていません
 
 - SEO については知識が無いので、自分が手を付けるとしたら一番最後になりそうです
 
-- 誰か手伝ってくれると、助かります
+- ちゃんと SEO できると、嬉しい人はたくさんいそうです
+
+= See also
+
+* ((<"rurema/bitclust issues"|URL:https://github.com/rurema/bitclust/issues>))
+* ((<"rurema/doctree issues"|URL:https://github.com/rurema/doctree/issues>))
+
+= Improve\nRuby\nDocumentation
+
+== Note
+
+一緒にRubyのドキュメントをよくしていきましょう!!
 
 # = English documentation
 #  
