@@ -61,6 +61,16 @@
 
 - 「るりま」はRubyリファレンスマニュアルのことです
 
+= る((*り*))ま
+
+  # image
+  # src = rurema.png
+  # relative-height = 100
+
+== Note
+
+- 「るりま」はこんな感じのサイトです
+
 = る((*び*))ま
 
 * ((*Ruby*))ist ((*Ma*))gazine
@@ -69,6 +79,16 @@
 == Note
 
 - 「るびま」はRubyistMagazineというウェブ雑誌のことです
+
+= る((*び*))ま
+
+  # image
+  # src = rubima.png
+  # relative-height = 100
+
+== Note
+
+- 「るびま」はこんな感じのサイトです
 
 = る((*り*))ま\n!=\nる((*び*))ま
 
